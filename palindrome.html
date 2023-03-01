@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      function palindrome(str) {
+        var len = str.length
+        var loopStart = Math.floor(len/2)
+
+        for(var i=0 ;loopStart<2;i++){
+            if(str[i]!== str[len-1-i]){
+            //  document.write("Number is not a palindrome")
+            return false;
+            }
+        }
+        // document.write("Number is  a palindrome")
+        return true;
+      }
+      document.write(palindrome("MaM")) 
+    </script>
+</body>
+</html>
